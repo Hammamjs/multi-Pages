@@ -1,0 +1,123 @@
+@use '../../../css/scss/global/global';
+@use '../../../css/scss/variables/variables' as *;
+@use '../../../css/scss/global/header';
+
+/* End Header */
+
+
+.header {
+    background-image: url(../../../imgs/background.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 400px;
+    .text {
+        color: #FFF;
+        text-align: center;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
+}
+}
+
+/* End Header */
+
+
+
+/* Start Map */
+.map {
+    img {
+        background-size: cover;
+    }
+    .contact {
+        svg {
+            color: $hover;
+        }
+        span {
+            font-size: 14px;
+        }
+    }
+}
+/* End Map */
+
+
+/* End Message */
+.map {
+        border: 1px solid #777;
+        padding: 15px;
+        textarea {
+            height: 100px;
+            resize: none;
+        }
+        input {
+            background-color: transparent;
+            border: none;
+            padding: 5px 10px;
+            outline: none;
+            border: 1px solid #DDD;
+        }
+        textarea {
+            background-color: transparent;
+            border: 1px solid #DDD;
+            outline: none;
+            padding: 5px 10px;
+
+        }
+                button {
+            display: block;
+            padding: 10px 25px;
+            border: 1px solid $hover;
+            width: fit-content;
+            background-color: transparent;
+            position: relative;
+            color: $hover;
+            transition: $transition;
+            -webkit-transition: $transition;
+            -moz-transition: $transition;
+            -ms-transition: $transition;
+            -o-transition: $transition;
+                &:hover{
+                color: #FFF;
+                background-color: $hover;
+                border-color: $hover;
+                &::before , &::after {
+                background-color: $hover;
+                }
+            }
+            &::before , &::after {
+                content: '';
+                width: 17px;
+                height: 2px;
+                position: absolute;
+                background-color: $hover;
+                transform: translateY(-50%);
+                -webkit-transform: translateY(-50%);
+                -moz-transform: translateY(-50%);
+                -ms-transform: translateY(-50%);
+                -o-transform: translateY(-50%);
+                transition: $transition;
+}
+&::before {
+            top: 50%;
+            left: -9px;
+}
+&::after {
+            top: 50%;
+            right: -9px;
+}
+
+
+        }
+    }
+
+/* End Message */
+
+
+
+
+
+
+

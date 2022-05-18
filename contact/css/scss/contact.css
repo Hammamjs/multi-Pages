@@ -1,0 +1,215 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/*  component */
+.main-title {
+  text-align: center;
+}
+.main-title h2 {
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.main-title p {
+  color: #777;
+}
+
+/*  component */
+.header {
+  background-image: url(../../imgs/banner.png);
+  width: 100%;
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  background-attachment: fixed;
+}
+.header::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.8);
+}
+.header .navbar-nav .nav-link {
+  color: #FFF;
+  position: relative;
+  overflow: hidden;
+}
+.header .navbar-nav .nav-link::after {
+  content: "";
+  display: block;
+  width: 0%;
+  height: 2px;
+  margin: 0 auto;
+  background-color: #e92727b5;
+  transition: 0.4s;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+}
+.header .navbar-nav .nav-link:hover::after {
+  width: 100%;
+}
+.header .navbar-toggler svg {
+  color: #FFF;
+}
+.header .navbar-toggler:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+@media (max-width: 576px) {
+  .header span {
+    color: #FFF;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #FFF;
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  .header .navbar-nav {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 300px;
+    background: red;
+    height: 100%;
+    z-index: 10;
+    padding: 30px;
+    transition: 0.4s;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -ms-transition: 0.4s;
+    -o-transition: 0.4s;
+    -webkit-transition: 0.4s;
+  }
+}
+
+/* End Header */
+.header {
+  background-image: url(../../../imgs/background.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 400px;
+}
+.header .text {
+  color: #FFF;
+  text-align: center;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+}
+
+/* End Header */
+/* Start Map */
+.map img {
+  background-size: cover;
+}
+.map .contact svg {
+  color: #e92727b5;
+}
+.map .contact span {
+  font-size: 14px;
+}
+
+/* End Map */
+/* End Message */
+.map {
+  border: 1px solid #777;
+  padding: 15px;
+}
+.map textarea {
+  height: 100px;
+  resize: none;
+}
+.map input {
+  background-color: transparent;
+  border: none;
+  padding: 5px 10px;
+  outline: none;
+  border: 1px solid #DDD;
+}
+.map textarea {
+  background-color: transparent;
+  border: 1px solid #DDD;
+  outline: none;
+  padding: 5px 10px;
+}
+.map button {
+  display: block;
+  padding: 10px 25px;
+  border: 1px solid #e92727b5;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  background-color: transparent;
+  position: relative;
+  color: #e92727b5;
+  transition: 0.4s;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+}
+.map button:hover {
+  color: #FFF;
+  background-color: #e92727b5;
+  border-color: #e92727b5;
+}
+.map button:hover::before, .map button:hover::after {
+  background-color: #e92727b5;
+}
+.map button::before, .map button::after {
+  content: "";
+  width: 17px;
+  height: 2px;
+  position: absolute;
+  background-color: #e92727b5;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+.map button::before {
+  top: 50%;
+  left: -9px;
+}
+.map button::after {
+  top: 50%;
+  right: -9px;
+}
+
+/* End Message */

@@ -1,0 +1,309 @@
+@use 'global/global';
+@use 'variables/variables' as *; 
+@use 'global/header';
+
+
+
+
+
+
+
+/*  Start Header  */
+.header {
+    .intro {
+        position: absolute;
+        top: 40%;
+        transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
+        h2 {
+            font-size: 45px;
+        }
+        p {
+            font-size: 15px;
+        }
+        a {
+            padding: 10px 25px;
+            border: 1px solid;
+            width: fit-content;
+            margin: 0 auto;
+            position: relative;
+            transition: $transition;
+            &:hover {
+                background-color: $hover;
+                border-color: $hover;
+                &::before , &::after {
+    background-color: $hover;
+}
+            }
+            &::before , &::after {
+                content: '';
+                width: 17px;
+                height: 2px;
+                position: absolute;
+                background-color: #FFF;
+                transform: translateY(-50%);
+                -webkit-transform: translateY(-50%);
+                -moz-transform: translateY(-50%);
+                -ms-transform: translateY(-50%);
+                -o-transform: translateY(-50%);
+                transition: $transition;
+}
+&::before {
+            top: 50%;
+            left: -9px;
+}
+&::after {
+            top: 50%;
+            right: -9px;
+}
+
+
+        }
+}
+}
+/*  End Header  */
+
+/*  Start course  */
+.course{
+    .box {
+        text-align: center;
+        background-color: #f4bbf5;
+        transition: $transition;
+    &:hover {
+        box-shadow:0 10px 20px rgba($color:#000000,$alpha: .4);
+        transform: translateY(-2px);
+        -webkit-transform: translateY(-2px);
+        -moz-transform: translateY(-2px);
+        -ms-transform: translateY(-2px);
+        -o-transform: translateY(-2px);
+}
+        h3 {
+            margin-bottom: 15px;
+        }
+        p {
+            margin-top: 25px;
+        }
+    }
+}
+@media (max-width : 576px) {
+    .box {
+        margin-bottom: 10px;
+    }
+}
+/*  End course  */
+
+
+/*  Start campus  */
+.campus {
+    .img-holder {
+        overflow: hidden;
+            transition: $transition;
+            -webkit-transition: $transition;
+            -moz-transition: $transition;
+            -ms-transition: $transition;
+            -o-transition: $transition;
+            position: relative;
+            border-radius: 10px;
+            -webkit-border-radius: 10px;
+            -moz-border-radius: 10px;
+            -ms-border-radius: 10px;
+            -o-border-radius: 10px;
+            .text {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                background-color: #ff000085;
+                top: 0;
+                left: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                transition: $transition;
+                transform: translateY(calc(100% + 100px));
+                -webkit-transform: translateY(calc(100% + 100px));
+                -moz-transform: translateY(calc(100% + 100px));
+                -ms-transform: translateY(calc(100% + 100px));
+                -o-transform: translateY(calc(100% + 100px));
+                h4{
+                    text-transform: uppercase;
+                    color: #FFF;
+                    font-weight: normal;
+                    font-size: 18px;
+                }
+            }
+            &:hover {
+.text {
+transform: translateY(0);
+-webkit-transform: translateY(0);
+-moz-transform: translateY(0);
+-ms-transform: translateY(0);
+-o-transform: translateY(0);
+}
+}
+        }
+}
+@media (max-width : 576px) {
+.img-holder {
+    margin-bottom: 10px;
+}
+
+}
+/*  End campus  */
+
+
+
+
+
+
+/*  Start Testi  */
+
+.testimonials {
+
+.testi{
+    background-color: #f4bbf5;
+img{
+        width: 80px;
+    }
+    .name-rate {
+        margin-left: 60px;
+        font-weight: bold;
+        font-size: 19px;
+    }
+        .social {
+            color: gold;
+        }
+    }
+}
+
+@media (max-width : 576px) {
+
+.testi {
+    margin-bottom: 10px;
+}
+
+
+
+}
+
+/*  End Testi  */
+
+
+
+
+
+
+
+
+/*  Start Online-course  */
+.online-course {
+    .course{
+    background-image: url(../../imgs/banner2.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    &::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;    
+        height: 100%;
+        background-color: rgba($color: #000000, $alpha: .8);
+    }
+    .text {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%)    ;
+        -webkit-transform: translateY(-50%)    ;
+        -moz-transform: translateY(-50%)    ;
+        -ms-transform: translateY(-50%)    ;
+        -o-transform: translateY(-50%)    ;
+}
+        a {
+            padding: 10px 25px;
+            border: 1px solid;
+            width: fit-content;
+            margin: 0 auto;
+            position: relative;
+            transition: $transition;
+            &:hover {
+                background-color: $hover;
+                border-color: $hover;
+                &::before , &::after {
+    background-color: $hover;
+}
+            }
+            &::before , &::after {
+                content: '';
+                width: 17px;
+                height: 2px;
+                position: absolute;
+                background-color: #FFF;
+                transform: translateY(-50%);
+                -webkit-transform: translateY(-50%);
+                -moz-transform: translateY(-50%);
+                -ms-transform: translateY(-50%);
+                -o-transform: translateY(-50%);
+                transition: $transition;
+}
+&::before {
+            top: 50%;
+            left: -9px;
+}
+&::after {
+            top: 50%;
+            right: -9px;
+}
+} 
+} 
+}
+
+/*  End Online-course  */
+
+
+
+
+
+
+
+
+/*  Start about  */
+.about {
+    .social {
+        svg {
+            margin-left: 15px;
+            color: $hover;
+        }
+    }
+}
+/*  Start About  */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

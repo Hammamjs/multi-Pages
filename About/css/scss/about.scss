@@ -1,0 +1,99 @@
+@use '../.../../../../css/scss/global/global';
+@use '../.../../../../css/scss/variables/variables' as *;
+@use '../.../../../../css/scss/global/header';
+
+
+/*  Start Header  */
+.header {
+    background-image:url(../../../imgs/background.jpg);
+    background-position: top center;
+    background-size: cover;
+    height: 450px;
+    .text {
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
+}
+}
+/*  End Header  */
+
+/*  Start Detailes  */
+.detailes {
+    a {
+        padding: 10px 25px;
+        border: 1px solid;
+        width: fit-content;
+        position: relative;
+        transition: $transition;
+        border: 1px solid $hover;
+        color: $hover;
+        &::before , &::after {
+            content: '';
+            width: 17px;
+            height: 2px;
+            position: absolute;
+            background-color: $hover;
+            transform: translateY(-50%);
+            -webkit-transform: translateY(-50%);
+            -moz-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            -o-transform: translateY(-50%);
+            transition: $transition;
+        }
+        &::before {
+        top: 50%;
+        left: -9px;
+        }
+        &::after {
+        top: 50%;
+        right: -9px;
+        }
+        &:hover {
+                background-color: $hover;
+                border-color: $hover;
+                color: #FFF;
+                    &::before , &::after {
+                    background-color: $hover;
+                    }
+                    }
+} 
+}
+
+@media (max-width : 576px) {
+
+.box {
+    margin-bottom: 15px;
+}
+
+
+}
+/*  End Detailes  */
+
+
+
+
+/*  Start About  */
+.about {
+    .social {
+        svg {
+            margin-left: 15px;
+            color: $hover;
+        }
+    }
+}
+/*  End About  */
+
+
+
+
+
+
+
+
+
+
+

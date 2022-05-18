@@ -1,0 +1,92 @@
+@use '../variables/variables' as * ;
+
+.header {
+    background-image: url(../../imgs/banner.png);
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    background-attachment: fixed;
+    &::before {
+        content: '';
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: rgba($color: #000000, $alpha: .8);
+    }
+    .navbar-nav {
+        .nav-link {
+            color: #FFF;
+            position: relative;
+            overflow: hidden;
+
+            &::after{
+                content: '';;
+                display: block;
+                width: 0%;
+                height: 2px;
+                margin: 0 auto;
+                background-color: $hover;
+                transition: $transition;
+                -webkit-transition: $transition;
+                -moz-transition: $transition;
+                -ms-transition: $transition;
+                -o-transition: $transition;
+}
+&:hover {
+    &::after {
+        width: 100%;
+}
+}
+}
+}
+.navbar-toggler {
+    svg {
+        color: #FFF;
+    }
+    &:focus {
+        box-shadow: none;
+    }
+
+    }
+
+@media (max-width: 576px) {
+    span {
+    color: #FFF;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #FFF;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.navbar-nav {
+    flex-basis: 100%;
+    flex-grow: 1;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 300px;
+    background: red;
+    height: 100%;
+    z-index: 10;
+    padding: 30px;
+    transition:$transition;
+    -webkit-transition:$transition;
+    -moz-transition:$transition;
+    -ms-transition:$transition;
+    -o-transition:$transition;
+    -webkit-transition: $transition;
+}
+}
+}
